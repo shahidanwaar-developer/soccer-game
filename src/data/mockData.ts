@@ -3,8 +3,8 @@ import type { CurrentUser, Player, Team, Match, Tournament, Conversation, Messag
 // Mock current user
 export const mockCurrentUser: CurrentUser = {
   id: 'user_123',
-  name: 'Marcus Sterling',
-  email: 'marcus@example.com',
+  name: 'Xavier Emmanuel',
+  email: 'xavier@example.com',
   rating: 1240,
   position: 'Midfielder',
   team: 'Thunder United',
@@ -88,7 +88,7 @@ export const mockPlayers: Player[] = [
   },
   {
     id: 'p7',
-    name: 'Marcus Sterling',
+    name: 'Xavier Emmanuel',
     rating: 1240,
     position: 'Midfielder',
     team: 'Thunder United',
@@ -265,7 +265,7 @@ export const mockMessages: Message[] = [
   {
     id: 'msg2',
     conversationId: 'conv1',
-    sender: 'Marcus Sterling',
+    sender: 'Xavier Emmanuel',
     content: 'Thanks! Your defense was incredible. Want a rematch?',
     timestamp: '2024-08-15 14:25',
     read: true,
@@ -388,6 +388,37 @@ export const mockBonuses: Bonus[] = [
 ];
 
 // Mock carousel slides
+// export const mockCarouselSlides: CarouselSlide[] = [
+//   {
+//     id: 'slide1',
+//     title: 'Summer Championship',
+//     description: 'Compete with players worldwide',
+//     imageUrl: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&h=400&fit=crop',
+//     link: '/tournaments/tour1',
+//   },
+//   {
+//     id: 'slide2',
+//     title: 'New Season Kicks Off',
+//     description: 'Join the biggest tournament',
+//     imageUrl: 'https://images.unsplash.com/photo-1529148482759-b8fcb8792b46?w=1200&h=400&fit=crop',
+//     link: '/tournaments',
+//   },
+//   {
+//     id: 'slide3',
+//     title: 'Limited Time Bonus',
+//     description: 'Get 50% extra on all deposits',
+//     imageUrl: 'https://images.unsplash.com/photo-1552667466-07d71e725e34?w=1200&h=400&fit=crop',
+//     link: '/deposit',
+//   },
+//   {
+//     id: 'slide4',
+//     title: 'Elite Players Wanted',
+//     description: 'Join an exclusive tournament',
+//     imageUrl: 'https://images.unsplash.com/photo-1570598676214-dc2d4e83e64e?w=1200&h=400&fit=crop',
+//     link: '/1v1',
+//   },
+// ];
+
 export const mockCarouselSlides: CarouselSlide[] = [
   {
     id: 'slide1',
@@ -400,21 +431,21 @@ export const mockCarouselSlides: CarouselSlide[] = [
     id: 'slide2',
     title: 'New Season Kicks Off',
     description: 'Join the biggest tournament',
-    imageUrl: 'https://images.unsplash.com/photo-1529148482759-b8fcb8792b46?w=1200&h=400&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1200&h=400&fit=crop',
     link: '/tournaments',
   },
   {
     id: 'slide3',
     title: 'Limited Time Bonus',
     description: 'Get 50% extra on all deposits',
-    imageUrl: 'https://images.unsplash.com/photo-1552667466-07d71e725e34?w=1200&h=400&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=1200&h=400&fit=crop',
     link: '/deposit',
   },
   {
     id: 'slide4',
     title: 'Elite Players Wanted',
     description: 'Join an exclusive tournament',
-    imageUrl: 'https://images.unsplash.com/photo-1570598676214-dc2d4e83e64e?w=1200&h=400&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&h=400&fit=crop',
     link: '/1v1',
   },
 ];

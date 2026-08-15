@@ -58,7 +58,7 @@ export default function StandingsPage() {
             {filteredPlayers.map((player, index) => {
               const totalMatches = player.wins + player.losses + player.draws;
               const winRate = totalMatches ? (player.wins / totalMatches * 100).toFixed(1) : 0;
-              const isCurrentUser = player.name === 'Marcus Sterling';
+              const isCurrentUser = player.name === 'Xavier Emmanuel';
 
               return (
                 <tr

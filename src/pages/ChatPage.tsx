@@ -26,7 +26,7 @@ export default function ChatPage() {
       const newMessage = {
         id: `msg_${Date.now()}`,
         conversationId: selectedConversation.id,
-        sender: 'Marcus Sterling',
+        sender: 'Xavier Emmanuel',
         content: messageInput,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         read: true,
@@ -110,14 +110,14 @@ export default function ChatPage() {
                 conversationMessages.map((msg) => (
                   <div
                     key={msg.id}
-                    className={`flex gap-3 ${msg.sender === 'Marcus Sterling' ? 'justify-end' : 'justify-start'}`}
+                    className={`flex gap-3 ${msg.sender === 'Xavier Emmanuel' ? 'justify-end' : 'justify-start'}`}
                   >
-                    {msg.sender !== 'Marcus Sterling' && (
+                    {msg.sender !== 'Xavier Emmanuel' && (
                       <Avatar src={selectedConversation.participantAvatar} name={msg.sender} size="sm" />
                     )}
                     <div
                       className={`max-w-xs px-4 py-2 rounded-lg ${
-                        msg.sender === 'Marcus Sterling'
+                        msg.sender === 'Xavier Emmanuel'
                           ? 'bg-blue-600 text-white'
                           : 'bg-gray-700 text-gray-100'
                       }`}

@@ -95,7 +95,7 @@ export default function OneVsOnePage() {
       {step === 'idle' && (
         <Card className="space-y-6">
           <div className="text-center space-y-4">
-            <Icon icon="solar:sword-bold" className="text-6xl text-orange-500 mb-4" />
+            <Icon icon="lucide:swords" className="text-6xl text-orange-500 mb-4" />
             <h2 className="text-2xl font-bold text-white">Find an Opponent</h2>
             <p className="text-gray-400">
               Challenge another player in a competitive 1v1 match. Your rating may change based on the result.

@@ -39,7 +39,7 @@ export default function TournamentsPage() {
                   className="w-full h-full object-cover"
                 />
               ) : (
-                <Icon icon="solar:trophy-bold" className="text-4xl text-white/50" />
+                <Icon icon="lucide:trophy" className="text-4xl text-white/50" />
               )}
             </div>
 

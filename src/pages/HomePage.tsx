@@ -18,10 +18,10 @@ export default function HomePage() {
 
   const quickActions = [
     { label: 'Exhibition', icon: 'solar:play-circle-bold', path: '/exhibition', color: 'from-purple-600 to-purple-800' },
-    { label: '1v1 Match', icon: 'solar:sword-bold', path: '/1v1', color: 'from-orange-600 to-orange-800' },
-    { label: 'Tournament', icon: 'solar:trophy-bold', path: '/tournaments', color: 'from-yellow-600 to-yellow-800' },
-    { label: 'Manage Team', icon: 'solar:users-group-rounded-bold', path: '/team', color: 'from-blue-600 to-blue-800' },
+    { label: '1v1 Match', icon: 'lucide:swords', path: '/1v1', color: 'from-orange-600 to-orange-800' },
+    { label: 'Tournament', icon: 'lucide:trophy', path: '/tournaments', color: 'from-yellow-600 to-yellow-800' },
     { label: 'Transfers', icon: 'solar:transfer-horizontal-bold', path: '/transfers', color: 'from-green-600 to-green-800' },
+    { label: 'Manage Team', icon: 'solar:users-group-rounded-bold', path: '/team', color: 'from-blue-600 to-blue-800' },
     { label: 'My Matches', icon: 'solar:football-bold', path: '/matches', color: 'from-red-600 to-red-800' },
   ];
 
@@ -31,7 +31,7 @@ export default function HomePage() {
       <div>
         <PageHeader
           title={`Welcome back, ${user.name.split(' ')[0]}!`}
-          subtitle="Here's your football platform dashboard"
+          subtitle="Here's your Soccer platform dashboard"
         />
       </div>
 
@@ -108,8 +108,7 @@ export default function HomePage() {
       </div>
 
       {/* Upcoming Match & Recent Results */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Upcoming Match */}
+      {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {selectedMatch && (
           <Card className="lg:col-span-1">
             <div className="space-y-4">
@@ -153,8 +152,6 @@ export default function HomePage() {
             </div>
           </Card>
         )}
-
-        {/* Recent Results */}
         <Card className="lg:col-span-2">
           <div className="space-y-4">
             <h3 className="text-lg font-bold text-white">Recent Results</h3>
@@ -214,10 +211,10 @@ export default function HomePage() {
             </Button>
           </div>
         </Card>
-      </div>
+      </div> */}
 
       {/* Active Tournaments */}
-      {activeTournaments.length > 0 && (
+      {/* {activeTournaments.length > 0 && (
         <div>
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-2xl font-bold text-white">Active Tournaments</h2>
@@ -262,7 +259,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
