@@ -44,7 +44,16 @@ export default function StandingsPage() {
 
       <Card className="overflow-x-auto">
         <table className="w-full text-left">
-          
+          <thead>
+            <tr className="border-b border-gray-700">
+              <th className="px-4 py-3 text-sm font-semibold text-gray-300">Rank</th>
+              <th className="px-4 py-3 text-sm font-semibold text-gray-300">Player</th>
+              <th className="px-4 py-3 text-sm font-semibold text-gray-300">Team</th>
+              <th className="px-4 py-3 text-sm font-semibold text-gray-300 text-center">Rating</th>
+              <th className="px-4 py-3 text-sm font-semibold text-gray-300 text-center">W-L-D</th>
+              <th className="px-4 py-3 text-sm font-semibold text-gray-300 text-right">Win %</th>
+            </tr>
+          </thead>
           <tbody>
             {filteredPlayers.map((player, index) => {
               const totalMatches = player.wins + player.losses + player.draws;
