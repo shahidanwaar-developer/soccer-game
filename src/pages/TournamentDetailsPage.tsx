@@ -30,7 +30,7 @@ export default function TournamentDetailsPage() {
   }
 
   return (
-    <div className="space-y-6">
+  <div className="space-y-6">
       <PageHeader title={tournament.name} />
 
       {/* Header Card */}
