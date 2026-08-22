@@ -32,58 +32,6 @@ export default function TournamentDetailsPage() {
   return (
   <div className="space-y-6">
 
-      {/* Header Card */}
-      <Card>
-        <div className="space-y-6">
-          <div className="flex flex-col md:flex-row gap-6">
-            {/* Image */}
-            <div className="md:w-1/3">
-              <div className="bg-linear-to-br from-purple-600 to-blue-600 rounded-lg h-64 flex items-center justify-center overflow-hidden">
-                {tournament.imageUrl ? (
-                  <img
-                    src={tournament.imageUrl}
-                    alt={tournament.name}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <Icon icon="lucide:trophy" className="text-6xl text-white/50" />
-                )}
-              </div>
-            </div>
-
-            {/* Details */}
-            <div className="md:w-2/3 space-y-4">
-              <div className="flex items-center gap-2">
-                <StatusBadge status={tournament.status} />
-                <p className="text-sm text-gray-400">{tournament.startDate}</p>
-              </div>
-
-              <p className="text-lg text-gray-300">{tournament.description}</p>
-
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 bg-gray-700 rounded-lg p-4">
-                <div>
-                  <p className="text-xs text-gray-400">Participants</p>
-                  <p className="text-2xl font-bold text-white">
-                    {tournament.participants}/{tournament.maxParticipants}
-                  </p>
-                </div>
-                <div>
-                  <p className="text-xs text-gray-400">Prize Pool</p>
-                  <p className="text-2xl font-bold text-green-400">${tournament.prizePool.toLocaleString()}</p>
-                </div>
-                <div>
-                  <p className="text-xs text-gray-400">Entry Fee</p>
-                  <p className="text-2xl font-bold text-blue-400">${tournament.entryFee}</p>
-                </div>
-              </div>
-
-              <Button fullWidth size="lg" variant={tournament.joined ? 'outline' : 'primary'}>
-                {tournament.joined ? 'Tournament Joined' : 'Join Tournament'}
-              </Button>
-            </div>
-          </div>
-        </div>
-      </Card>
 
       {/* Tabs */}
       <Tabs tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
