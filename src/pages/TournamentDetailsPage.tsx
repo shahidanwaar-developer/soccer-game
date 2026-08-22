@@ -31,65 +31,7 @@ export default function TournamentDetailsPage() {
 
   return (
   <div className="space-y-6">
-      {/* Overview Tab */}
-      {activeTab === 'overview' && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card>
-            <h3 className="text-lg font-bold text-white mb-4">Tournament Details</h3>
-            <div className="space-y-3 text-sm">
-              <div>
-                <p className="text-gray-400">Status</p>
-                <p className="font-semibold text-white capitalize">{tournament.status}</p>
-              </div>
-              <div>
-                <p className="text-gray-400">Start Date</p>
-                <p className="font-semibold text-white">{tournament.startDate}</p>
-              </div>
-              {tournament.endDate && (
-                <div>
-                  <p className="text-gray-400">End Date</p>
-                  <p className="font-semibold text-white">{tournament.endDate}</p>
-                </div>
-              )}
-              <div>
-                <p className="text-gray-400">Entry Fee</p>
-                <p className="font-semibold text-white">${tournament.entryFee}</p>
-              </div>
-              <div>
-                <p className="text-gray-400">Prize Pool</p>
-                <p className="font-semibold text-green-400">${tournament.prizePool.toLocaleString()}</p>
-              </div>
-            </div>
-          </Card>
-
-          <Card>
-            <h3 className="text-lg font-bold text-white mb-4">Prize Distribution</h3>
-            <div className="space-y-3">
-              <div className="flex justify-between items-center pb-3 border-b border-gray-700">
-                <div className="flex items-center gap-2">
-                  <Icon icon="solar:medal-1-bold" className="text-yellow-500 text-xl" />
-                  <span className="font-semibold text-white">1st Place</span>
-                </div>
-                <span className="text-green-400 font-bold">${(tournament.prizePool * 0.5).toLocaleString()}</span>
-              </div>
-              <div className="flex justify-between items-center pb-3 border-b border-gray-700">
-                <div className="flex items-center gap-2">
-                  <Icon icon="solar:medal-2-bold" className="text-gray-400 text-xl" />
-                  <span className="font-semibold text-white">2nd Place</span>
-                </div>
-                <span className="text-green-400 font-bold">${(tournament.prizePool * 0.3).toLocaleString()}</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <div className="flex items-center gap-2">
-                  <Icon icon="solar:medal-3-bold" className="text-orange-600 text-xl" />
-                  <span className="font-semibold text-white">3rd Place</span>
-                </div>
-                <span className="text-green-400 font-bold">${(tournament.prizePool * 0.2).toLocaleString()}</span>
-              </div>
-            </div>
-          </Card>
-        </div>
-      )}
+     
 
       {/* Bracket Tab */}
       {activeTab === 'bracket' && (
