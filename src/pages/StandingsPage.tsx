@@ -9,13 +9,6 @@ export default function StandingsPage() {
   const [filter, setFilter] = useState('global');
   const [searchTerm, setSearchTerm] = useState('');
 
-  
-
-  const sortedPlayers = [...mockPlayers].sort((a, b) => b.rating - a.rating);
-  const filteredPlayers = sortedPlayers.filter((p) =>
-    p.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   return (
     <div className="space-y-6">
       <PageHeader title="Standings" subtitle="Global player rankings" />
