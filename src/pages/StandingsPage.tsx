@@ -9,12 +9,7 @@ export default function StandingsPage() {
   const [filter, setFilter] = useState('global');
   const [searchTerm, setSearchTerm] = useState('');
 
-  const filterOptions = [
-    { value: 'global', label: 'Global' },
-    { value: 'friends', label: 'Friends' },
-    { value: 'weekly', label: 'Weekly' },
-    { value: 'monthly', label: 'Monthly' },
-  ];
+  
 
   const sortedPlayers = [...mockPlayers].sort((a, b) => b.rating - a.rating);
   const filteredPlayers = sortedPlayers.filter((p) =>
