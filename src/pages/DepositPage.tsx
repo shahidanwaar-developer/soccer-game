@@ -17,26 +17,22 @@ export default function DepositPage() {
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
   const [transactions] = useState(mockTransactions);
 
-  const predefinedAmounts = [50, 100, 250, 500, 1000];
-
+  const predefinedAmounts = [50, 100, 250, 500, 100];
   const handleSelectAmount = (val: number) => {
     setSelectedAmount(val);
     setAmount(val.toString());
     setCustomAmount('');
   };
-
   const handleCustomAmount = (val: string) => {
     setCustomAmount(val);
     setAmount(val);
     setSelectedAmount(null);
   };
-
   const handleDeposit = async () => {
     const depositAmount = parseFloat(amount);
     if (depositAmount <= 0) return;
 
     setDepositing(true);
-    
     // Simulate deposit processing
     setTimeout(() => {
       updateBalance(depositAmount);
@@ -91,9 +87,7 @@ export default function DepositPage() {
                 ))}
               </div>
             </div>
-
-            {/* Custom Amount */}
-            <div>
+<div>
               <Input
                 label="Custom Amount (USD)"
                 type="number"
