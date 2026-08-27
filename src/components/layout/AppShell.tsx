@@ -8,7 +8,6 @@ export function AppShell({ children }: AppShellProps) {
   return (
     <div className="min-h-screen bg-gray-900">
       <Header />
-      <Sidebar />
 
       {/* Main Content */}
       <main className="md:ml-64 mt-12 md:mt-3 pb-20 md:pb-0 min-h-screen">
