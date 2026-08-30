@@ -1,10 +1,6 @@
 import { useState } from 'react';
-import { Icon } from '@iconify/react';
-
 import { PageHeader } from '../components/ui/Utils';
 import { Card } from '../components/ui/Card';
-import { Button } from '../components/ui/Button';
-import { Tabs } from '../components/ui/Utils';
 import { mockTeams } from '../data/mockData';
 
 export default function TeamPage() {
@@ -12,15 +8,6 @@ export default function TeamPage() {
   const [activeTab, setActiveTab] = useState('squad');
   const [selectedFormation, setSelectedFormation] = useState('4-3-3');
   const [team] = useState(mockTeams[0]);
-
-  const tabs = [
-    { label: 'Squad', value: 'squad' },
-    { label: 'Lineup', value: 'lineup' },
-    { label: 'Formation', value: 'formation' },
-    { label: 'Statistics', value: 'statistics' },
-  ];
-
-  const formations = ['4-3-3', '3-5-2', '5-3-2', '4-4-2'];
 
   return (
     <div className="space-y-6">
