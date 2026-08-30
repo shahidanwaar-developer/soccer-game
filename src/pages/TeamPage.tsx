@@ -47,9 +47,6 @@ export default function TeamPage() {
         </div>
       </Card>
 
-      {/* Tabs */}
-      <Tabs tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
-
       {/* Squad Tab */}
       {activeTab === 'squad' && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
