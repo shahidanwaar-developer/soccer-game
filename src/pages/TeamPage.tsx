@@ -47,47 +47,6 @@ export default function TeamPage() {
         </div>
       </Card>
 
-
-      {/* Formation Tab */}
-      {activeTab === 'formation' && (
-        <Card>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-bold text-white mb-4">Select Formation</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {formations.map((formation) => (
-                  <button
-                    key={formation}
-                    onClick={() => setSelectedFormation(formation)}
-                    className={`px-4 py-3 rounded-lg font-semibold transition-all ${
-                      selectedFormation === formation
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-gray-700 text-gray-200 hover:bg-gray-600'
-                    }`}
-                  >
-                    {formation}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="border-t border-gray-700 pt-6">
-              <p className="text-sm text-gray-400 mb-4">Formation Preview</p>
-              <div className="bg-green-900 rounded-lg p-8 aspect-video flex items-center justify-center">
-                <div className="text-center">
-                  <Icon icon="solar:football-bold" className="text-4xl text-white mb-2" />
-                  <p className="text-white font-bold">{selectedFormation}</p>
-                </div>
-              </div>
-            </div>
-
-            <Button variant="primary" className="w-full">
-              Apply Formation
-            </Button>
-          </div>
-        </Card>
-      )}
-
       {/* Statistics Tab */}
       {activeTab === 'statistics' && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
