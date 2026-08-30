@@ -47,42 +47,7 @@ export default function TeamPage() {
         </div>
       </Card>
 
-      {/* Squad Tab */}
-      {activeTab === 'squad' && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {team.squad.map((player) => (
-            <Card key={player.id} hoverable>
-              <div className="flex items-start gap-4">
-                <div className="w-16 h-16 rounded-lg bg-linear-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                  <p className="font-bold text-white text-lg">
-                    {player.name
-                      .split(' ')
-                      .map((n) => n[0])
-                      .join('')}
-                  </p>
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-white">{player.name}</h3>
-                  <p className="text-sm text-gray-400">{player.position}</p>
-                  <div className="flex gap-4 mt-2">
-                    <div>
-                      <p className="text-xs text-gray-500">Rating</p>
-                      <p className="font-bold text-yellow-400">{player.rating}</p>
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-500">Matches</p>
-                      <p className="font-bold text-white">{player.wins + player.losses + player.draws}</p>
-                    </div>
-                  </div>
-                </div>
-                <Button variant="ghost" size="sm">
-                  <Icon icon="solar:info-circle-bold" />
-                </Button>
-              </div>
-            </Card>
-          ))}
-        </div>
-      )}
+      
 
       {/* Lineup Tab */}
       {activeTab === 'lineup' && (
