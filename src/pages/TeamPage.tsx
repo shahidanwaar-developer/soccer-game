@@ -47,54 +47,6 @@ export default function TeamPage() {
         </div>
       </Card>
 
-      
-
-      {/* Lineup Tab */}
-      {activeTab === 'lineup' && (
-        <Card>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-bold text-white mb-4">Starting Lineup</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {team.startingLineup.map((player) => (
-                  <div key={player.id} className="bg-gray-700 rounded-lg p-4 flex items-center justify-between">
-                    <div>
-                      <p className="font-bold text-white">{player.name}</p>
-                      <p className="text-xs text-gray-400">{player.position}</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-xs text-gray-500">Rating</p>
-                      <p className="font-bold text-yellow-400">{player.rating}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="border-t border-gray-700 pt-6">
-              <h3 className="text-lg font-bold text-white mb-4">Substitutes</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {team.substitutes.map((player) => (
-                  <div key={player.id} className="bg-gray-700 rounded-lg p-4 flex items-center justify-between opacity-75">
-                    <div>
-                      <p className="font-bold text-white">{player.name}</p>
-                      <p className="text-xs text-gray-400">{player.position}</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-xs text-gray-500">Rating</p>
-                      <p className="font-bold text-yellow-400">{player.rating}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <Button variant="primary" className="w-full">
-              Save Lineup
-            </Button>
-          </div>
-        </Card>
-      )}
 
       {/* Formation Tab */}
       {activeTab === 'formation' && (
