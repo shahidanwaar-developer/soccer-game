@@ -9,28 +9,7 @@ export default function TeamPage() {
 
   return (
     <div className="space-y-6">
-      <PageHeader title="Manage Team" subtitle="Configure your squad" />
-
-      {/* Team Header */}
-      <Card>
-        <div className="flex items-center gap-6">
-          <div className="text-5xl">{team.logo}</div>
-          <div className="flex-1">
-            <h2 className="text-3xl font-bold text-white">{team.name}</h2>
-            <p className="text-gray-400 mt-1">{team.squad.length} Players</p>
-          </div>
-          <div className="text-right space-y-2">
-            <div>
-              <p className="text-sm text-gray-400">Team Rating</p>
-              <p className="text-3xl font-bold text-yellow-400">{team.rating}</p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-400">Formation</p>
-              <p className="text-2xl font-bold text-white">{selectedFormation}</p>
-            </div>
-          </div>
-        </div>
-      </Card>
+      
 
       {/* Statistics Tab */}
       {activeTab === 'statistics' && (
