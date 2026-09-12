@@ -5,9 +5,7 @@ import { mockTeams } from '../data/mockData';
 
 export default function TeamPage() {
 
-  const [activeTab, setActiveTab] = useState('squad');
-  const [selectedFormation, setSelectedFormation] = useState('4-3-3');
-  const [team] = useState(mockTeams[0]);
+  
 
   return (
     <div className="space-y-6">
