@@ -59,11 +59,7 @@ export default function OneVsOnePage() {
     setSearchTime(0);
   };
 
-  const handleAcceptOpponent = () => {
-    setStep('lobby');
-    setReady(false);
-    setOpponentReady(false);
-  };
+
 
   const handleStartMatch = () => {
     // Simulate match result
