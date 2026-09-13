@@ -48,18 +48,7 @@ export default function OneVsOnePage() {
     return () => clearTimeout(readyTimer);
   }, [step]);
 
-  const handleStartMatch = () => {
-    // Simulate match result
-    const results: ('win' | 'loss' | 'draw')[] = ['win', 'loss', 'draw'];
-    const result = results[Math.floor(Math.random() * results.length)];
-    setMatchResult(result);
 
-    // Update rating
-    if (result === 'win') updateRating(1);
-    else if (result === 'loss') updateRating(-1);
-
-    setTimeout(() => setStep('result'), 2000);
-  };
 
   const handleNewMatch = () => {
     setStep('idle');
