@@ -48,19 +48,6 @@ export default function OneVsOnePage() {
     return () => clearTimeout(readyTimer);
   }, [step]);
 
-  const handleStartSearch = () => {
-    setStep('searching');
-    setSearchTime(0);
-    setOpponent(null);
-  };
-
-  const handleCancelSearch = () => {
-    setStep('idle');
-    setSearchTime(0);
-  };
-
-
-
   const handleStartMatch = () => {
     // Simulate match result
     const results: ('win' | 'loss' | 'draw')[] = ['win', 'loss', 'draw'];
